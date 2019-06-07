@@ -22,7 +22,9 @@ exports.up = function(knex, Promise) {
       tbl
       .boolean('completed')
       .notNullable() 
-     
+        
+      tbl
+      .integer('project_id')
       });
   };
 
